@@ -40,10 +40,6 @@ function SignIn() {
             <input type="radio" name="usertype" id="user" value={'user'} {...register('userType',{required:true})}/>
             <label className='userlabel' for="user">User</label>
           </div>
-          <div className='user'>
-            <input type="radio" name="usertype" id="admin" value={'admin'} {...register('userType',{required:true})} disabled/>
-            <label className='userlabel' for="admin">Admin</label>
-          </div>
         </div>
           {
             errors.userType?.type==='required' && <p style={{color:'red'}}>Please select User Type</p>
